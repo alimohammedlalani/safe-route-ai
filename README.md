@@ -58,10 +58,8 @@ saferoute-ai/
         │   ├── RiskScoreRing.jsx
         │   └── Badges.jsx
         └── pages/
-            ├── Landing.jsx      # Hero + features + how it works
             ├── Dashboard.jsx    # Main risk map dashboard
-            ├── Trends.jsx       # Charts & insights page
-            └── Methodology.jsx  # How the model works (for judges)
+            └── Trends.jsx       # Charts & insights page
 ```
 
 
