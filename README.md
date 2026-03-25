@@ -1,4 +1,4 @@
-# SafeRoute AI 🛡️
+# SafeRoute AI 
 ### Dynamic Accident Risk Index & Adaptive Zone Clustering — Hyderabad
 
 > **Hackathon Submission: Problem Statement 56 — Accident Risk Index & Zone Clustering Model**
@@ -21,46 +21,6 @@ Instead of a static heatmap that permanently labels zones as dangerous, SafeRout
 
 ---
 
-
-## Project Structure
-
-```
-saferoute-ai/
-├── backend/
-│   ├── main.py                 # FastAPI app, all endpoints
-│   ├── requirements.txt
-│   ├── data/
-│   │   └── incidents.json      # 50 curated Hyderabad incidents
-│   └── utils/
-│       ├── risk_engine.py      # Scoring, time-decay, explainability
-│       └── clustering.py       # Spatial zone clustering
-│
-└── frontend/
-    ├── index.html
-    ├── vite.config.js
-    ├── tailwind.config.js
-    └── src/
-        ├── App.jsx
-        ├── main.jsx
-        ├── index.css
-        ├── data/
-        │   └── incidents.js     # JS mirror of backend data
-        ├── utils/
-        │   ├── riskEngine.js    # JS risk scoring + explainability
-        │   └── clustering.js    # JS spatial clustering
-        ├── components/
-        │   ├── Navbar.jsx
-        │   ├── RiskMap.jsx      # Leaflet map with zone overlays
-        │   ├── ZoneDrawer.jsx   # Zone detail side panel
-        │   ├── ZoneTable.jsx    # Zone list sidebar
-        │   ├── SummaryCards.jsx # Dashboard stat cards
-        │   ├── DashboardFilters.jsx
-        │   ├── RiskScoreRing.jsx
-        │   └── Badges.jsx
-        └── pages/
-            ├── Dashboard.jsx    # Main risk map dashboard
-            └── Trends.jsx       # Charts & insights page
-```
 
 
 
@@ -122,5 +82,3 @@ decay = e^(−days_ago / 45)
 
 - Demo data — not live official city feeds(Currently MVP stage)
 
-
-*Built for hackathon demonstration purposes.*
